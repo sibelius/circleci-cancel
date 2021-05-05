@@ -1,0 +1,24 @@
+{
+  "name": "circleci-cancel",
+  "version": "1.0.0",
+  "author": "Sibelius Seraphini <sibeliusseraphini@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "https://github.com/sibelius/circleci-cancel.git",
+  "scripts": {
+    "b": "babel-node --extensions \".es6,.js,.es,.jsx,.mjs,.ts,.tsx\"",
+    "cancel": "yarn b ./src/cancelPipelines.ts"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "2.2.1",
+    "yargs": "^17.0.1",
+    "core-js": "^3.11.2"
+  },
+  "devDependencies": {
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-typescript": "^7.13.0",
+    "@babel/core": "^7.14.0",
+    "typescript": "4.2.4"
+  }
+}
